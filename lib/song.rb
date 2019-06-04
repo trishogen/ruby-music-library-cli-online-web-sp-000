@@ -50,7 +50,7 @@ class Song
 
   def self.create_from_filename(filename)
     song_name = filename.split(/ - |.mp3/)[1]
-    self.createsong_name)
+    self.create(song_name)
   end
 
 end
