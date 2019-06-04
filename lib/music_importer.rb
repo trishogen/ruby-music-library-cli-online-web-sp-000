@@ -10,5 +10,7 @@ class MusicImporter
     @files = Dir.entries(path).reject { |f| File.directory?(f) }
   end
 
+  def import
+  end
 
 end
