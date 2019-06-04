@@ -48,7 +48,6 @@ class MusicLibraryController
 
   def list_songs_by_artist
     artist = gets.chomp
-    Artist.find_by_name(artist).songs
   end
 
 end
