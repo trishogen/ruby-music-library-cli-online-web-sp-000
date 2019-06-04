@@ -6,5 +6,5 @@ class MusicLibraryController << MusicImporter
     @path = path
     MusicImporter.new(path)
   end
-  
+
 end
