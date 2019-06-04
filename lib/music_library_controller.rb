@@ -1,6 +1,7 @@
 class MusicLibraryController
 
-  attr_reader :path, :songs_sorted
+  attr_reader :path,
+  attr_accessor :songs_sorted
 
   def initialize(path='./db/mp3s')
     @path = path
@@ -26,7 +27,6 @@ class MusicLibraryController
   end
 
   def list_songs
-    @songs_sorted = []
     @songs_sorted = Song.all.sort_by {|song| song.name}
     @songs_sorted.each_with_index do |song, index|
       puts "#{index + 1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
