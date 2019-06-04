@@ -46,4 +46,9 @@ class MusicLibraryController
     end
   end
 
+  def list_songs_by_artist
+    artist = gets.chomp
+    
+  end
+
 end
