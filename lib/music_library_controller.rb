@@ -44,6 +44,7 @@ class MusicLibraryController
     genres_sorted.each_with_index do |genre, index|
       puts "#{index + 1}. #{genre.name}"
     end
+    genres_sorted
   end
 
   def list_songs_by_artist
