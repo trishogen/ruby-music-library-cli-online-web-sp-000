@@ -29,6 +29,7 @@ class MusicLibraryController
     song_names = Song.all.collect {|song| song.name}.sort
     song_names.each_with_index do |song, index|
       puts "#{index + 1} song"
+    end
   end
 
 
