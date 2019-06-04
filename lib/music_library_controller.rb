@@ -1,4 +1,4 @@
-class MusicLibraryController << MusicImporter
+class MusicLibraryController
 
   attr_reader :path
 
