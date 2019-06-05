@@ -1,6 +1,6 @@
 class MusicLibraryController
 
-  attr_reader :path,
+  attr_reader :path
   attr_accessor :songs_sorted
 
   def initialize(path='./db/mp3s')
