@@ -70,9 +70,9 @@ class MusicLibraryController
 
   def play_song
     puts "Which song number would you like to play?"
-    song_index = gets.chomp.to_i - 1
-    song = @songs_sorted[song_index]
-    puts "Playing #{song.name} by #{song.artist.name}"
+    # song_index = gets.chomp.to_i - 1
+    # song = @songs_sorted[song_index]
+    # puts "Playing #{song.name} by #{song.artist.name}"
   end
 
 end
