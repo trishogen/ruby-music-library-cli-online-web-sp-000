@@ -27,9 +27,8 @@ class MusicLibraryController
   end
 
   def list_songs
-    @songs_sorted = []
-    @songs_sorted = Song.all.sort_by {|song| song.name}
-    @songs_sorted.each_with_index do |song, index|
+    songs_sorted = Song.all.sort_by {|song| song.name}
+    songs_sorted.each_with_index do |song, index|
       puts "#{index + 1}. #{song.artist.name} - #{song.name} - #{song.genre.name}"
     end
   end
@@ -71,7 +70,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     song_index = gets.chomp.to_i - 1
-    # song = @songs_sorted[song_index]
+    song = Song.all.sort_by {|song| song.name}[song_index]
     # puts "Playing #{song.name} by #{song.artist.name}"
   end
 
